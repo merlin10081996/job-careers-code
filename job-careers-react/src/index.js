@@ -7,6 +7,7 @@ import DesignationDetails from './components/DesignationDetails';
 import DesignSW from './components/DesignSW';
 import DesignAn from './components/DesignAn';
 import DesignSp from './components/DesignSp';
+import Resume from './components/Resume';
 
 
 let modals = (
@@ -17,6 +18,7 @@ let modals = (
       <DesignSW/>
       <DesignAn/>
       <DesignSp/>
+      <Resume/>
   </div>
 );
 

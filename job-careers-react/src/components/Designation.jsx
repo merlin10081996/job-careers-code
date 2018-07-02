@@ -38,10 +38,7 @@ class Designation extends Component {
                             <td>United States</td>
                         </tr>
                         </tbody>
-                    </table>
-
-
-                                   </div>
+                    </table>                                   </div>
             </form>
 
         );

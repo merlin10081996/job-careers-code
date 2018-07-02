@@ -11,14 +11,12 @@ class Resume extends Component {
                 <div className="form-group">
                     <img src={vzLogo} width={100} height={5} alt="..." className="img-thumbnail" /></div>
 
-                <div>
-
-                    <button type="submit" className="btn btn-primary"><b>Careers</b></button>
-                </div>
 
                 <div>
                     <label>First Name</label>
+                    bodycontent label { padding-right:20px }
                     <input type="text"  id="usr"/>
+
                 </div>
                 <div>
                     <label>Last Name</label>
