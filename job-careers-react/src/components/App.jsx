@@ -14,7 +14,9 @@ import DesignSp from "./DesignSp";
 import DesignSW from "./DesignSW";
 import DesignAn from "./DesignAn";
 import ApplyButton from "./ApplyButton";
-
+import Resume from "./Resume";
+import Upload from "./Upload";
+import AboutUs from "./AboutUs";
 
 class App extends Component {
     render() {
@@ -24,14 +26,18 @@ class App extends Component {
                <div className="form-group">
                    <img src={vzLogo} width={100} height={5} alt="..." className="img-thumbnail" /></div>
                    <div>
-               <button type="submit" className="btn btn-primary"><b>About Us</b></button>
-                       <button type="submit" className="btn btn-primary"><b><NavLink to="/Designation">Careers</NavLink></b></button>
+               <button type="submit" className="btn btn-default"><b><NavLink to="/AboutUs">About Us</NavLink></b></button>
+                       <Route exact path="/AboutUs" component={AboutUs}/>
+
+                       <button type="submit" className="btn btn-default"><b><NavLink to="/Designation">Careers</NavLink></b></button>
                        <Route exact path="/Designation" component={Designation}/>
                        <Route  path="/DesignationDetails" component={DesignationDetails}/>
                        <Route  path="/DesignSW" component={DesignSW}/>
                        <Route  path="/DesignAn" component={DesignAn}/>
                        <Route  path="/DesignSp" component={DesignSp}/>
                        <Route  path="/ApplyButton" component={ApplyButton}/>
+                       <Route exact path="/Resume" component={Resume}/>
+                       <Route exact path="/Upload" component={Upload}/>
                </div>
             </form>
             </HashRouter>

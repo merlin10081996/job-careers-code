@@ -1,7 +1,13 @@
 import React from 'react';
 import {Component} from 'react';
 //import './login.css';
+import {
+    Route,
+    NavLink,
+    HashRouter
+} from 'react-router-dom';
 import vzLogo from './images/vz.png';
+import ApplyButton from './ApplyButton';
 
 
 class Resume extends Component {
@@ -93,7 +99,7 @@ class Resume extends Component {
                     <input type="text"  id="usr"/>
                 </div>
                 <div>
-                    <button type="submit" className="btn btn-primary"><b>Additional Information</b></button>
+                    <button type="submit" className="btn btn-default"><b>Additional Information</b></button>
                 </div>
                 <div>
                     <label>Country</label>
@@ -108,13 +114,15 @@ class Resume extends Component {
                     <input type="text"  id="usr"/>
                 </div>
                 <div>
-                    <button type="submit" className="btn btn-primary"><b>Additional Information</b></button>
+                    <button type="submit" className="btn btn-default"><b>Additional Information</b></button>
                 </div>
                 <div>
-                    <button type="submit" className="btn btn-primary"><b>Save As Draft</b></button>
+                    <button type="submit" className="btn btn-default"><b>Save As Draft</b></button>
                 </div>
+                <div><button type="submit" className="btn btn-default"><NavLink to="/ApplyButton">Back </NavLink></button>
+                    <Route exact path="/ApplyButton" component={ApplyButton}/></div>
                 <div>
-                    <button type="submit" className="btn btn-primary"><b>Submit</b></button>
+                    <button type="submit" className="btn btn-default"><b>Submit</b></button>
                 </div>
 
             </form>

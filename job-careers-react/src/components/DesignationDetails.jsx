@@ -19,7 +19,7 @@ class DesignationDetails extends Component {
                 <div><b>Job Description</b> : Techies who can transform the way we work on the inside to improve the experience we deliver on the outside</div>
                 <div>A great technology company is powered by great technology, and by great people who push the boundaries,</div>
                 <div>create solutions from scratch and turn big data into smart insights. Be the face of the digital world.</div>
-                <div><button type="submit" className="btn btn-primary"><b><NavLink to="/ApplyButton">ApplyButton</NavLink></b></button>
+                <div><button type="submit" className="btn btn-default"><b><NavLink to="/ApplyButton">Apply</NavLink></b></button>
                     <Route  path="/ApplyButton" component={ApplyButton}/>
                 </div>
             </form>
