@@ -13,8 +13,7 @@ class Resume extends Component {
 
 
                 <div>
-                    <label>First Name</label>
-                    bodycontent label { padding-right:20px }
+                    <label>First Name      </label>
                     <input type="text"  id="usr"/>
 
                 </div>

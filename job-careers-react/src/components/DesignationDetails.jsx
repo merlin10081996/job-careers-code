@@ -2,8 +2,12 @@ import React from 'react';
 import {Component} from 'react';
 import './login.css';
 import vzLogo from './images/vz.png';
-
-
+import ApplyButton from './ApplyButton';
+import {
+    Route,
+    NavLink,
+    HashRouter, Link, BrowserRouter, Switch
+} from "react-router-dom";
 class DesignationDetails extends Component {
     render() {
         return (
@@ -15,11 +19,15 @@ class DesignationDetails extends Component {
                 <div><b>Job Description</b> : Techies who can transform the way we work on the inside to improve the experience we deliver on the outside</div>
                 <div>A great technology company is powered by great technology, and by great people who push the boundaries,</div>
                 <div>create solutions from scratch and turn big data into smart insights. Be the face of the digital world.</div>
-                <div><button type="submit" className="btn btn-primary"><b>Apply</b></button></div>
+                <div><button type="submit" className="btn btn-primary"><b><NavLink to="/ApplyButton">ApplyButton</NavLink></b></button>
+                    <Route  path="/ApplyButton" component={ApplyButton}/>
+                </div>
             </form>
+
 
 
         );
     }
 }
 export default DesignationDetails;
+

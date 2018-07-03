@@ -8,19 +8,24 @@ import DesignSW from './components/DesignSW';
 import DesignAn from './components/DesignAn';
 import DesignSp from './components/DesignSp';
 import Resume from './components/Resume';
+import SignUp from'./components/SignUp';
+//import { Router, Route, browserHistory } from 'react-router';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
 
 
 let modals = (
   <div>
       <App />
-      <Designation />
-      <DesignationDetails/>
-      <DesignSW/>
-      <DesignAn/>
-      <DesignSp/>
-      <Resume/>
   </div>
 );
 
-ReactDOM.render(modals, document.getElementById('root'));
+ReactDOM.render(<BrowserRouter>
+    <switch>
+        <Route exact path="/" component={ App} />
+    <Route  exact path="/Designation" component={ Designation} />
+    <Route  path="/DesignationDetails" component={ DesignationDetails} />
+        <Route  path="/DesignSW" component={ DesignSW} />
+    </switch>
+</BrowserRouter>, document.getElementById('root'));
 
