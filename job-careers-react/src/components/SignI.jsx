@@ -1,6 +1,13 @@
 import React from 'react';
 import {Component} from 'react';
 import './login.css';
+import SignUp from './SignUp';
+import ApplyButton from './ApplyButton';
+import {
+    Route,
+    NavLink,
+    HashRouter, Link, BrowserRouter, Switch
+} from "react-router-dom";
 
 
 class SignIn extends Component {
@@ -18,17 +25,15 @@ class SignIn extends Component {
                     <label htmlFor="exampleInputPassword1">Password</label>
                     <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password"/>
                 </div>
+                <button type="submit" className="btn btn-default"><NavLink to="/ApplyButton">Submit</NavLink></button>
+                <Route  path="/ApplyButton" component={ApplyButton}/>
 
-                <button type="submit" className="btn btn-primary">Submit</button>
-                <i>New User?</i><button type="button" className="btn btn-link">Sign Up</button>
-                <a href="doodlers-react/src/components/SignUp.jsx" class="btn btn-link" role="button">Sign Up</a>
+                <i>New User?</i><button type="button" className="btn btn-default"><NavLink to="/SignUp">Sign Up</NavLink></button>
+                <Route  path="/SignUp" component={SignUp}/>
 
             </form>
 
     );
     }
 }
-
-
-
 export default SignIn;

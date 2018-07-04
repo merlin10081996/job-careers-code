@@ -5,8 +5,7 @@ import './login.css';
 class SignIn extends Component {
     render() {
         return (
-            Email address
-        </div>
+       <form>
         <div className="form-group" class="col-md-6">
             <label htmlFor="exampleInputPassword1">Password</label>
             <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password"/>
@@ -15,7 +14,6 @@ class SignIn extends Component {
         <button type="submit" className="btn btn-primary">Submit</button>
         <i>New User?</i><button type="button" className="btn btn-link">Sign Up</button>
         <a href="doodlers-react/src/components/SignUp.jsx" class="btn btn-link" role="button">Sign Up</a>
-
         </form>
 
     );
