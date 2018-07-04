@@ -34,6 +34,7 @@ class App extends Component {
                 <button type="submit" className="btn btn-default"><b><NavLink to="/Designation">Careers</NavLink></b></button>
                 <button type="submit" className="btn btn-default"><b><NavLink to="/MyDashboard">My Dashboard</NavLink></b></button>
                        <Route exact path="/AboutUs" component={AboutUs}/>
+
                        <Route exact path="/Designation" component={Designation}/>
                        <Route  path="/DesignationDetails" component={DesignationDetails}/>
                        <Route  path="/DesignSW" component={DesignSW}/>
