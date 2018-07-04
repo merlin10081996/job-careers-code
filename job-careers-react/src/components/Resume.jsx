@@ -51,7 +51,7 @@ class Resume extends Component {
                     <input type="text"  id="usr" className="form-control" id="sel1" class ="col-sm-2"/>
                 </div>
                 <div>
-                    <label htmlFor="sel1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>State</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label htmlFor="sel1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>State</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <select className="form-control" id="sel1" className="form-control" id="sel1" class ="col-sm-2">
                         <option>Ind</option>
                         <option>US</option>
