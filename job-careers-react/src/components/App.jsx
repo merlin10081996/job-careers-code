@@ -26,10 +26,10 @@ class App extends Component {
                <div className="form-group">
                    <img src={vzLogo} width={100} height={5} alt="..." className="img-thumbnail" /></div>
                    <div>
-               <button type="submit" className="btn btn-default"><b><NavLink to="/AboutUs">About Us</NavLink></b></button>
+               <button type="submit" className="btn btn-primary"><b><NavLink to="/AboutUs" class="bg-primary text-white">About Us</NavLink></b></button>
                        <Route exact path="/AboutUs" component={AboutUs}/>
 
-                       <button type="submit" className="btn btn-default"><b><NavLink to="/Designation">Careers</NavLink></b></button>
+                       <button type="submit"className="btn btn-primary"><b><NavLink to="/Designation" class="bg-primary text-white">Careers</NavLink></b></button>
                        <Route exact path="/Designation" component={Designation}/>
                        <Route  path="/DesignationDetails" component={DesignationDetails}/>
                        <Route  path="/DesignSW" component={DesignSW}/>
