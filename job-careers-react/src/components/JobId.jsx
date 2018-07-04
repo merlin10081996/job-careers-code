@@ -15,22 +15,24 @@ class Jobid extends Component {
                 <form>
                     <div>
                         <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Job Name:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="text" id="usr" className="form-control" id="sel1" className="col-sm-2"/>
+                        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Software Engineer</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 
                     </div>
                     <div>
                         <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Job ID:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="text" id="usr" className="form-control" id="sel1" className="col-sm-2"/>
+                        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>123457</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 
                     </div>
                     <div>
                         <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Interview Date:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="text" id="usr" className="form-control" id="sel1" className="col-sm-2"/>
+                        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>09/07/2018</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                     </div>
                     <div>
                         <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Hiring Manager:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="text" id="usr" className="form-control" id="sel1" className="col-sm-2"/>
+                        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Sai </b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                     </div>
 

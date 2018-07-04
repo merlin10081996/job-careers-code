@@ -8,15 +8,22 @@ import {
 } from "react-router-dom";
 import Jobid from "./JobId";
 import Feedback from "./Feedback";
+import Upload from "./Upload";
+import Resume from "./Resume";
 class MyDashboard extends Component {
     render() {
         return (
             <HashRouter>
                 <form>
-                    <button type="submit" className="btn btn-default"><b><NavLink to="/Jobid">Applied Jobs</NavLink></b></button>
-                    <button type="submit" className="btn btn-default"><b><NavLink to="/Feedback">Feedback</NavLink></b></button>
-                    <Route exact path="/Jobid" component={Jobid}/>
-                    <Route exact path="/Feedback" component={Feedback}/>
+                    <div>
+                        <a className="nav-link" href="#"> <NavLink to="/Jobid">Applied Jobs</NavLink></a>
+                        <Route exact path="/Jobid" component={Jobid}/>
+                    </div>
+                    <div>
+                        <a className="nav-link" href="#"> <NavLink to="/Feedback">Feedback</NavLink></a>
+                        <Route exact path="/Feedback" component={Feedback}/>
+                    </div>
+
                 </form>
             </HashRouter>
 
