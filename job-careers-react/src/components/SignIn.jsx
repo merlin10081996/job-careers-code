@@ -11,7 +11,7 @@ class SignIn extends Component {
             <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password"/>
         </div>
 
-        <button type="submit" className="btn btn-primary">Submit</button>
+        <button type="submit" className="btn btn-success">Submit</button>
         <i>New User?</i><button type="button" className="btn btn-link">Sign Up</button>
         <a href="doodlers-react/src/components/SignUp.jsx" class="btn btn-link" role="button">Sign Up</a>
         </form>

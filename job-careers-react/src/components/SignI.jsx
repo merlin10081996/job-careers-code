@@ -25,10 +25,10 @@ class SignIn extends Component {
                     <label htmlFor="exampleInputPassword1">Password</label>
                     <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password"/>
                 </div>
-                <button type="submit" className="btn btn-default"><NavLink to="/ApplyButton">Submit</NavLink></button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" className="btn btn-success"><NavLink to="/ApplyButton" class="bg-inverse text-white">Submit</NavLink></button>
                 <Route  path="/ApplyButton" component={ApplyButton}/>
 
-                <i>New User?</i><button type="button" className="btn btn-default"><NavLink to="/SignUp">Sign Up</NavLink></button>
+                <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New User?</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" className="btn btn-info"><NavLink to="/SignUp" class="bg-inverse text-white">Sign Up</NavLink></button>
                 <Route  path="/SignUp" component={SignUp}/>
 
             </form>

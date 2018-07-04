@@ -21,8 +21,8 @@ class Upload extends Component {
                     <div className="form-group">
                         Upload Resume  <input type="file"/>
                     </div>
-                    <div><button type="submit" className="btn btn-default"><NavLink to="/Submit">Submit </NavLink></button>
-                        <button type="submit" className="btn btn-default"><NavLink to="/ApplyButton">Back </NavLink></button>
+                    <div><button type="submit" className="btn btn-success"><NavLink to="/Submit" class="bg-inverse text-white">Submit </NavLink></button>
+                        <button type="submit" className="btn btn-danger"><NavLink to="/ApplyButton" class="bg-inverse text-white">Back </NavLink></button>
                         <Route exact path="/ApplyButton" component={ApplyButton}/>
                     <Route exact path="/Submit" component={Submit}/></div>
             </form>

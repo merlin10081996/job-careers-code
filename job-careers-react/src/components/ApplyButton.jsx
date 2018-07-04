@@ -16,22 +16,31 @@ import App from "./App";
 class ApplyButton extends Component {
     render() {
         return(
-        <HashRouter>
-        <form>
-        <div className="form-group">
-            <div>
-                <a className="nav-link" href="#"> <NavLink to="/Upload">Upload Resume </NavLink></a>
-                <Route exact path="/Upload" component={Upload}/>
-            </div>
-                <div>
-
-                    <a className="nav-link" href="#"> <NavLink to="/Resume">Create Resume </NavLink></a>
-                    <Route exact path="/Resume" component={Resume}/>
-                </div>
-            <Route exact path="/Resume" component={Resume}/>
-        </div>
-            </form>
-        </HashRouter>
+            <HashRouter>
+                <form>
+                    <div>
+                        <table cellspacing="100" className="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">Resume</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><a className="nav-link" href="#"> <NavLink to="/Upload">Upload Resume </NavLink></a></td>
+                            </tr>
+                            <tr>
+                                <td><a className="nav-link" href="#"> <NavLink to="/Resume">Create Resume </NavLink></a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <switch>
+                            <Route  path="/Upload" component={Upload}/>
+                            <Route  path="/Resume" component={Resume}/>
+                        </switch>
+                    </div>
+                </form>
+            </HashRouter>
 
     );
 }

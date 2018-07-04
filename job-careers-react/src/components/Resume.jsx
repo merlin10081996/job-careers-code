@@ -159,10 +159,10 @@ class Resume extends Component {
                     <textarea className="form-control" rows="5" id="comment" className="col-sm-2"></textarea>
                 </div>
                 <div>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" className="btn btn-default"><NavLink to="/ApplyButton">Back </NavLink></button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" className="btn btn-danger"><NavLink to="/ApplyButton" class="bg-inverse text-white">Back </NavLink></button>
                     <Route exact path="/ApplyButton" component={ApplyButton}/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="submit" className="btn btn-default"><b>Save As Draft</b></button>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" className="btn btn-default"><b><NavLink to="/Submit">Submit </NavLink></b></button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="submit" className="btn btn-info"><b>Save As Draft</b></button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" className="btn btn-success"><b><NavLink to="/Submit" class="bg-inverse text-white">Submit </NavLink></b></button>
                     <div><Route exact path="/Submit" component={Submit}/></div>
                 </div>
 
