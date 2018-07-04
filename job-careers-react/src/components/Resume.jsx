@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom';
 import vzLogo from './images/vz.png';
 import ApplyButton from './ApplyButton';
-
+import Submit from './Submit';
 
 class Resume extends Component {
     render() {
@@ -162,7 +162,8 @@ class Resume extends Component {
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" className="btn btn-default"><NavLink to="/ApplyButton">Back </NavLink></button>
                     <Route exact path="/ApplyButton" component={ApplyButton}/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="submit" className="btn btn-default"><b>Save As Draft</b></button>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" className="btn btn-default"><b>Submit</b></button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" className="btn btn-default"><b><NavLink to="/Submit">Submit </NavLink></b></button>
+                    <div><Route exact path="/Submit" component={Submit}/></div>
                 </div>
 
             </form>

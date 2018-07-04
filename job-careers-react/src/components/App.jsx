@@ -22,6 +22,7 @@ import AppliedJobs from "./AppliedJobs";
 import MyDashboard from "./MyDashboard";
 import Jobid from "./JobId";
 import Feedback from "./Feedback";
+import Submit from "./Submit";
 class App extends Component {
     render() {
         return (
@@ -49,6 +50,7 @@ class App extends Component {
                 <Route  path="/MyDashboard" component={MyDashboard}/>
                 <Route  path="/Jobid" component={Jobid}/>
                 <Route exact path="/Feedback" component={Feedback}/>
+                <Route exact path="/Submit" component={Submit}/>
             </form>
             </HashRouter>
 

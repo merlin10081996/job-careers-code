@@ -6,7 +6,8 @@ import {
     NavLink,
     HashRouter, Link, BrowserRouter, Switch
 } from "react-router-dom";
-//import Designation from "./Designation";
+import ApplyButton from "./ApplyButton";
+import MyDashboard from "./MyDashboard";
 
 class Feedback extends Component {
     render() {
@@ -16,9 +17,13 @@ class Feedback extends Component {
                     <div>
                         <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Comments</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <textarea className="form-control" rows="5" id="comment" className="col-sm-2"></textarea>
-                        <div>
-                            < button type = "button"className = "btn btn-info" data-toggle = "collapse" data-target ="#demo" >Submit</button>
+
+                            <div>
+                            < button type = "submit" className = "btn btn-default" data-toggle = "collapse" data-target ="#demo" >Submit</button>
                             <div id="demo" class="collapse">Feedback is Successfully Submitted.</div>
+
+                            <button type="button" className="btn btn-default"><NavLink to="/MyDashboard">Back </NavLink></button>
+                           <div> <Route exact path="/MyDashboard" component={MyDashboard}/></div>
                         </div>
                     </div>
                 </form>

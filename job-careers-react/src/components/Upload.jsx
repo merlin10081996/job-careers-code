@@ -8,7 +8,7 @@ import {
     HashRouter
 } from 'react-router-dom';
 import ApplyButton from './ApplyButton';
-import Resume from './Resume';
+import Submit from './Submit';
 import DesignationDetails from "./DesignationDetails";
 import App from "./App";
 
@@ -21,9 +21,10 @@ class Upload extends Component {
                     <div className="form-group">
                         Upload Resume  <input type="file"/>
                     </div>
-                    <div><button type="submit" className="btn btn-toolbar">Submit</button></div>
-                    <div><button type="submit" className="btn btn-default"><NavLink to="/ApplyButton">Back </NavLink></button>
-                        <Route exact path="/ApplyButton" component={ApplyButton}/></div>
+                    <div><button type="submit" className="btn btn-default"><NavLink to="/Submit">Submit </NavLink></button>
+                        <button type="submit" className="btn btn-default"><NavLink to="/ApplyButton">Back </NavLink></button>
+                        <Route exact path="/ApplyButton" component={ApplyButton}/>
+                    <Route exact path="/Submit" component={Submit}/></div>
             </form>
             </HashRouter>
 

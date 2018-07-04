@@ -6,7 +6,8 @@ import {
     NavLink,
     HashRouter, Link, BrowserRouter, Switch
 } from "react-router-dom";
-//import Designation from "./Designation";
+import MyDashboard from "./MyDashboard";
+//import MyDashboard from "./MyDashboard";
 
 class Jobid extends Component {
     render() {
@@ -32,9 +33,11 @@ class Jobid extends Component {
                     </div>
                     <div>
                         <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Hiring Manager:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Sai Ramachandran</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Chris Black</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                     </div>
+                    <button type="button" className="btn btn-default"><NavLink to="/MyDashboard">Back </NavLink></button>
+                    <div> <Route exact path="/MyDashboard" component={MyDashboard}/></div>
 
                 </form>
             </HashRouter>
