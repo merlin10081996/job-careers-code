@@ -28,11 +28,11 @@ class App extends Component {
             <HashRouter>
             <form>
                <div className="form-group">
-                   <img src={vzLogo} width={100} height={5} alt="..." className="img-thumbnail" />
+                   <center> <img src={vzLogo} width={200} height={100} alt="..."  className="img-responsive"  /></center>
                </div>
-               <button type="submit" className="btn btn-default"><b><NavLink to="/AboutUs">About Us</NavLink></b></button>
-                <button type="submit" className="btn btn-default"><b><NavLink to="/Designation">Careers</NavLink></b></button>
-                <button type="submit" className="btn btn-default"><b><NavLink to="/MyDashboard">My Dashboard</NavLink></b></button>
+               <button type="submit" className="btn btn-warning"><b><NavLink to="/AboutUs" class="text-white">About Us</NavLink></b></button>
+                <button type="submit" className="btn btn-warning"><b><NavLink to="/Designation" class="text-white">Careers</NavLink></b></button>
+                <button type="submit" className="btn btn-warning"><b><NavLink to="/MyDashboard" class="text-white">My Dashboard</NavLink></b></button>
                        <Route exact path="/AboutUs" component={AboutUs}/>
 
                        <Route exact path="/Designation" component={Designation}/>
