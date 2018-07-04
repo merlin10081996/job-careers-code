@@ -28,7 +28,7 @@ class SignUp extends Component {
                     <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password"/>
                 </div>
 
-                <button type="submit" className="btn btn-default"><NavLink to="/ApplyButton">Submit</NavLink></button>
+                <button type="submit" className="btn btn-success"><NavLink to="/ApplyButton" class="bg-inverse text-white">Submit</NavLink></button>
                 <Route  path="/ApplyButton" component={ApplyButton}/>
 
             </form>
