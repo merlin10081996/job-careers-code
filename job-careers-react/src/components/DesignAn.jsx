@@ -8,6 +8,8 @@ import {
     HashRouter, Link, BrowserRouter, Switch
 } from "react-router-dom";
 import SignIn from './SignIn';
+import Designation from "./Designation";
+import MyDashboard from "./MyDashboard";
 class DesignAn extends Component {
     render() {
         return (
@@ -18,9 +20,11 @@ class DesignAn extends Component {
                 <div>A great technology company is powered by great technology, and by great people who push the boundaries,</div>
                 <div>create solutions from scratch and turn big data into smart insights. Be the face of the digital world.</div>
                 <div>
-                    <button type="submit" className="btn btn-default"><b><NavLink to="/SignIn">Apply</NavLink></b></button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" className="btn btn-success"><b><NavLink to="/SignIn" class="bg-inverse text-white">Apply</NavLink></b></button>
                     <Route  path="/SignIn" component={SignIn}/>
-                </div>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button" className="btn btn-danger"><NavLink to="/Designation" class="bg-inverse text-white">Back </NavLink></button>
+                    <Route exact path="/Designation" component={Designation}/></div>
 
             </form>
 

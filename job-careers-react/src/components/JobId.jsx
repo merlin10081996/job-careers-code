@@ -7,6 +7,7 @@ import {
     HashRouter, Link, BrowserRouter, Switch
 } from "react-router-dom";
 import MyDashboard from "./MyDashboard";
+import Designation from "./Designation";
 //import MyDashboard from "./MyDashboard";
 
 class Jobid extends Component {
@@ -36,8 +37,9 @@ class Jobid extends Component {
                         <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Chris Black</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                     </div>
-                    <button type="button" className="btn btn-default"><NavLink to="/MyDashboard">Back </NavLink></button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" className="btn btn-danger"><NavLink to="/MyDashboard" class="bg-inverse text-white">Back </NavLink></button>
                     <div> <Route exact path="/MyDashboard" component={MyDashboard}/></div>
+
 
                 </form>
             </HashRouter>

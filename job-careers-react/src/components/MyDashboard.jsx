@@ -16,14 +16,26 @@ class MyDashboard extends Component {
             <HashRouter>
                 <form>
                     <div>
-                        <a className="nav-link" href="#"> <NavLink to="/Jobid">Applied Jobs</NavLink></a>
-                        <Route exact path="/Jobid" component={Jobid}/>
+                        <table cellspacing="100" className="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">Details</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><a className="nav-link" href="#"><NavLink to="/Jobid">Applied Jobs</NavLink></a></td>
+                            </tr>
+                            <tr>
+                                <td><a className="nav-link" href="#"> <NavLink to="/Feedback">Feedback</NavLink></a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <switch>
+                            <Route  path="/Jobid" component={Jobid}/>
+                            <Route  path="/Feedback" component={Feedback}/>
+                        </switch>
                     </div>
-                    <div>
-                        <a className="nav-link" href="#"> <NavLink to="/Feedback">Feedback</NavLink></a>
-                        <Route exact path="/Feedback" component={Feedback}/>
-                    </div>
-
                 </form>
             </HashRouter>
 

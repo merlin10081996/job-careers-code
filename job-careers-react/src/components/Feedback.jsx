@@ -19,15 +19,16 @@ class Feedback extends Component {
                         <textarea className="form-control" rows="5" id="comment" className="col-sm-2"></textarea>
 
                             <div>
-                            < button type = "submit" className = "btn btn-default" data-toggle = "collapse" data-target ="#demo" >Submit</button>
+                            < button type = "submit" className = "btn btn-success">Submit</button>
                             <div id="demo" class="collapse">Feedback is Successfully Submitted.</div>
 
-                            <button type="button" className="btn btn-default"><NavLink to="/MyDashboard">Back </NavLink></button>
-                           <div> <Route exact path="/MyDashboard" component={MyDashboard}/></div>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" className="btn btn-danger"><NavLink to="/MyDashboard" class="bg-inverse text-white">Back </NavLink></button>
+                                <div> <Route exact path="/MyDashboard" component={MyDashboard}/></div>
                         </div>
                     </div>
                 </form>
             </HashRouter>
+
         );
     }
 }

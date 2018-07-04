@@ -7,6 +7,8 @@ import {
     HashRouter, Link, BrowserRouter, Switch
 } from "react-router-dom";
 import Designation from "./Designation";
+import MyDashboard from "./MyDashboard";
+import ApplyButton from "./ApplyButton";
 
 class AppliedJobs extends Component {
     render() {
@@ -18,6 +20,8 @@ class AppliedJobs extends Component {
 
                     <Route exact path="/Designation" component={Designation}/>
                 </form>
+
+
             </HashRouter>
 
         );

@@ -46,9 +46,7 @@ class Designation extends Component {
                             <td>United States</td>
                         </tr>
                         </tbody>
-
                     </table>
-
                     <switch>
                     <Route  path="/DesignationDetails" component={DesignationDetails}/>
                     <Route  path="/DesignSW" component={DesignSW}/>
