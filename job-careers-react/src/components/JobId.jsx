@@ -32,7 +32,7 @@ class Jobid extends Component {
                     </div>
                     <div>
                         <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Hiring Manager:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Sai </b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Sai Ramachandran</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                     </div>
 

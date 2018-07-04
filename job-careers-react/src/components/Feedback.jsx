@@ -16,12 +16,18 @@ class Feedback extends Component {
                     <div>
                         <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Comments</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <textarea className="form-control" rows="5" id="comment" className="col-sm-2"></textarea>
+                        <div>
+                            < button type = "button"className = "btn btn-info" data-toggle = "collapse" data-target ="#demo" >Submit</button>
+                            <div id="demo" class="collapse">Feedback is Successfully Submitted.</div>
+                        </div>
                     </div>
-
                 </form>
             </HashRouter>
-
         );
     }
 }
 export default Feedback;
+
+
+
+
